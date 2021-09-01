@@ -1,18 +1,21 @@
 name: Bug report 🐛
 description:
-  Something isn't working as expected? This is the right place to report your
+  Something not working as expected? This is the place to report your
   issue.
 title: '[Bug]: '
 labels: [type: bug 🐛]
 body:
   - type: markdown
     attributes:
-      value: Thanks for taking the time to fill out this bug report!
+      value: "## Welcome!"
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this bug report 💙
   - type: dropdown
     id: package
     attributes:
-      label: Packages
-      description: Which package(s) are you using?
+      label: Package
+      description: Which package are you using?
       multiple: true
       options:
         - 'carbon-components'
@@ -35,8 +38,8 @@ body:
   - type: dropdown
     id: browser
     attributes:
-      label: Browsers
-      description: Which browser(s) are you experiencing the issue?
+      label: Browser
+      description: Which browser are you experiencing the issue?
       multiple: true
       options:
         - Chrome
@@ -48,13 +51,13 @@ body:
     attributes:
       label: Package version
       description:
-        'Which version(s) are you using?'
+        'Which version are you using?'
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
-      label: About
+      label: Description
       description: "Tell us more about the problem that you're running into"
     validations:
       required: true
